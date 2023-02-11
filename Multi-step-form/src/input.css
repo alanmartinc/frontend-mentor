@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply text-blue-marine bg-blue-light border-blue-light;
+}
+
+.selected {
+  @apply border-blue-purplish bg-magnolia;
+}

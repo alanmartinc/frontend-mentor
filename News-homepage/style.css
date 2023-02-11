@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 80vw;
+  margin: 5vh 0;
+}
+
+#navLink > li {
+  list-style: none;
+}
+
+.active {
+  display: block;
+}
+
+#logo,
+#menu {
+  height: 5vh;
+  width: auto;
+}
+
+#menu {
+  display: none;
+}
+
+ul {
+  display: flex;
+  float: right;
+  position: fixed;
+  top: 3vh;
+  right: 9vw;
+}
+
+li {
+  margin: 1.4vw;
+  font-size: 14px;
+}
+
+main {
+  margin-left: 10vw;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 55vw;
+  height: 32vh;
+}
+
+main > section > article {
+  box-sizing: border-box;
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh;
+  height: 30vh;
+  background-color: hsl(36, 100%, 99%);
+}
+
+main > section > article > h1 {
+  font-size: 48px;
+  font-weight: bold;
+  width: 20vw;
+  line-height: 0.8;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+}
+
+main > section > article > p {
+  width: 20vw;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+main > section > article > p > button {
+  width: 10vw;
+  height: 5vh;
+  color: white;
+  letter-spacing: 1px;
+  background-color: hsl(5, 85%, 63%);
+  margin-top: 2vh;
+  border: none;
+}
+
+main > aside {
+  background-color: hsl(240, 100%, 5%);
+  width: 22vw;
+  height: 62vh;
+  color: white;
+  box-sizing: border-box;
+  padding: 2vh 2vw;
+}
+
+main > aside > h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 36px;
+  font-weight: bold;
+}
+
+main > aside > article {
+  height: 12vh;
+  margin: 2vh 0;
+}
+
+main > aside > article > h3 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+main > aside > article > h3:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+
+main > aside > hr {
+  height: 0.01px;
+  color: hsl(233, 8%, 79%);
+}
+
+main > aside > article > p {
+  font-size: 14px;
+  color: hsl(233, 8%, 79%);
+}
+
+.latest {
+  display: flex;
+  margin-top: 4vh;
+  margin-left: 10vw;
+}
+.latest > article {
+  height: 16vh;
+  width: 25vw;
+  display: flex;
+  align-items: center;
+  margin: 0 1vw;
+}
+
+.latest > article > img {
+  width: 10vw;
+  height: inherit;
+}
+
+.latest > article > .info {
+  padding: 1vw;
+}
+
+.latest > article > .info > h3 {
+  font-size: 20px;
+  font-weight: bolder;
+  color: hsl(233, 8%, 79%);
+}
+
+.latest > article > .info > h4 {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.latest > article > .info > p {
+  font-size: 14px;
+  color: hsl(236, 13%, 42%);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    height: 8vh;
+    width: 90vw;
+    margin-left: 5vw;
+    justify-content: space-between;
+    position: sticky;
+  }
+  #logo {
+    z-index: 1;
+  }
+  #menu {
+    display: block;
+    z-index: 1;
+  }
+
+  #navLink {
+    flex-direction: column;
+    padding: 15vh 0;
+    height: 100vh;
+    z-index: 1;
+    background-color: #fff;
+    float: right;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  li {
+    text-align: start;
+    height: 5vh;
+    width: 70vw;
+    padding-left: 5vw;
+    font-weight: bold;
+  }
+  main {
+    flex-direction: column;
+    margin: 0 5vw;
+    margin-bottom: 12vh;
+    width: 90vw;
+    box-sizing: border-box;
+    height: 140vh;
+  }
+  img {
+    height: 40vh;
+    width: 90vw;
+  }
+  main > section > article {
+    flex-direction: column;
+    width: 80vw;
+    height: 40vh;
+    margin: 2vh 0;
+  }
+  main > section > article > h1 {
+    width: 100%;
+    margin: 2vh 0;
+  }
+  main > section > article > p {
+    width: 100%;
+  }
+
+  main > section > article > p > button {
+    width: 60vw;
+    height: 5vh;
+  }
+  main > aside {
+    background-color: hsl(240, 100%, 5%);
+    width: 90vw;
+    height: 62vh;
+    color: white;
+    box-sizing: border-box;
+    padding: 2vh 2vw;
+    margin: 5vh 0;
+  }
+  .latest {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 5vw;
+  }
+  .latest > article {
+    height: 25vh;
+    width: 90vw;
+    margin: 2vh 0;
+  }
+
+  .latest > article > img {
+    width: 30vw;
+    height: inherit;
+  }
+  .latest > article > img {
+    margin-right: 5vw;
+  }
+}

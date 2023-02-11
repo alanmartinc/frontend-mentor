@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 30% 100%;
+  overflow: hidden;
+  font-family: "Space Grotesk", sans-serif;
+  position: relative;
+}
+
+.cards-container {
+  width: 50%;
+  float: left;
+}
+
+.card-front {
+  position: relative;
+  top: 20vh;
+  left: 25vh;
+  width: 0;
+  width: 50%;
+}
+
+.card-back {
+  position: relative;
+  top: 23vh;
+  left: 40vh;
+  width: 50%;
+}
+
+.card-back img {
+  -webkit-box-shadow: 18px -18px 57px -25px rgba(142, 142, 148, 1);
+  -moz-box-shadow: 18px -18px 57px -25px rgba(142, 142, 148, 1);
+  box-shadow: 18px -18px 57px -25px rgba(142, 142, 148, 1);
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+.valid {
+  border: 1px solid green;
+}
+
+.circles {
+  position: absolute;
+  left: 25px;
+  top: 25px;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(278, 68%, 11%);
+}
+
+.card-number {
+  position: absolute;
+  top: 130px;
+  font-size: 28px;
+  left: 30px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.cardholder-name {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.exp-date {
+  position: absolute;
+  bottom: 30px;
+  left: 370px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.exp-date.yy {
+  position: absolute;
+  bottom: 30px;
+  left: 400px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.cvv-number {
+  position: relative;
+  top: -8.7rem;
+  left: 22rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.form-container {
+  width: 50%;
+  height: 100vh;
+  float: left;
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 10%;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+input {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid black;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+#YY {
+  margin-left: 5px;
+}
+
+#MM,
+#YY {
+  width: 70px;
+  padding-left: 10px;
+}
+
+#cvvNumberInput {
+  width: 120px;
+  text-align: center;
+}
+
+label.cvv-label {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+button.confirmButton {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background: hsl(278, 68%, 11%);
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button.confirmButton:hover {
+  opacity: 0.9;
+  transition: 0.3s all;
+}
+
+.problem-popup::after {
+  content: "Something is wrong! Please enter valid data!";
+  position: absolute;
+  top: 10rem;
+  left: 60%;
+  color: red;
+  border: 2px solid hsl(278, 68%, 11%);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.thanks-message {
+  display: none;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.heading {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: hsl(278, 68%, 11%);
+  margin: 25px 0 15px 0;
+}
+
+.message {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: hsl(279, 6%, 55%);
+}
+
+button.continue-button {
+  width: 23rem;
+  padding: 10px;
+  border-radius: 8px;
+  background: hsl(278, 68%, 11%);
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 40px;
+}

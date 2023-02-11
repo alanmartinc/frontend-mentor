@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cards-container">
+      <div class="card-front">
+        <img src="./images/bg-card-front.png" alt="" />
+        <span class="circles"
+          ><svg
+            width="84"
+            height="47"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+            <path
+              d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+              stroke="#fff"
+            /></svg
+        ></span>
+        <div class="card-data">
+          <span id="cardNumberContainer" class="data card-number"></span>
+          <span id="cardholderContainer" class="data cardholder-name"></span>
+          <span id="expDateMMContainer" class="data exp-date"></span>
+          <span id="expDateYYContainer" class="data exp-date yy"></span>
+        </div>
+      </div>
+      <div class="card-back">
+        <img src="./images/bg-card-back.png" alt="" />
+        <span id="cvvNumberContainer" class="cvv-number"></span>
+      </div>
+    </div>
+    <div class="form-container">
+      <form action="" id="cardDataForm" class="card-data-form">
+        <label for="cardholderInput">CARDHOLDER NAME</label>
+        <input
+          type="text"
+          id="cardholderInput"
+          placeholder="Your Name"
+          required
+        />
+        <br />
+        <label for="cardNumberInput">CARD NUMBER</label>
+        <input
+          type="text"
+          id="cardNumberInput"
+          placeholder="0000 0000 0000 0000"
+          maxlength="19"
+          minlength="19"
+          required
+        />
+        <br /><br />
+        <label>EXP. DATE (MM/YY)</label> <br />
+        <input
+          type="text"
+          id="MM"
+          placeholder="MM"
+          min="1"
+          max="12"
+          minlength="2"
+          maxlength="2"
+          required
+        />
+        <input
+          type="text"
+          id="YY"
+          placeholder="YY"
+          min="23"
+          minlength="2"
+          maxlength="2"
+          required
+        />
+        <label class="cvv-label" for="cvvNumber">CVV</label>
+        <input
+          type="text"
+          id="cvvNumberInput"
+          placeholder="e.g. 123"
+          maxlength="3"
+          required
+        />
+        <br />
+        <button class="confirmButton" id="confirmBtn" type="button">
+          Confirm
+        </button>
+      </form>
+      <div class="thanks-message">
+        <svg
+          width="80"
+          height="80"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="40" cy="40" r="40" fill="url(#a)" />
+          <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+          <defs>
+            <linearGradient
+              id="a"
+              x1="-23.014"
+              y1="11.507"
+              x2="0"
+              y2="91.507"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#6348FE" />
+              <stop offset="1" stop-color="#610595" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <h1 class="heading">THANK YOU!</h1>
+        <p class="message">We've added your card details</p>
+        <button id="continueBtn" class="continue-button">Continue</button>
+      </div>
+    </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/profile/alanmartinc" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/alanmartinc">Alan Cabot</a>.
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

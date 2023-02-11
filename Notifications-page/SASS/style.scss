@@ -1,0 +1,136 @@
+@use "./variables";
+@use "./mixins";
+
+body {
+  background-color: variables.$VeryLightGrayishBlue;
+
+  main {
+    margin-bottom: 1.5rem;
+
+    .container {
+      @include mixins.space(1.55rem, 1rem, 0, 0);
+      background-color: variables.$White;
+      border-radius: 1rem;
+      box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+
+      @media only screen and (min-width: 777px) {
+        width: 75%;
+        margin: 5% auto;
+      }
+
+      @media only screen and (min-width: 1000px) {
+        @include mixins.space(1.55rem, 2rem, 0, 0);
+        width: 50%;
+        margin: 5% auto;
+      }
+
+      &__title {
+        @include mixins.displayFlex(row, space-between, center);
+        margin-bottom: 1.55rem;
+
+        h1 {
+          @include mixins.text-style(1rem, 800, variables.$VeryDarkBlue);
+          @include mixins.displayFlex(row, space-between, center);
+          gap: 1rem;
+
+          span {
+            display: block;
+            color: variables.$White;
+            background-color: variables.$Blue;
+            text-align: center;
+            border-radius: 5px;
+            @include mixins.space(3px, 7px, 0, 0);
+          }
+        }
+
+        p {
+          @include mixins.text-style(0.85rem, 500, variables.$DarkGrayishBlue);
+          cursor: pointer;
+
+          &:hover {
+            color: variables.$Blue;
+            font-weight: 800;
+          }
+        }
+      }
+
+      &__notifications {
+        border-radius: 1rem;
+
+        &__item {
+          @include mixins.displayFlex(row, flex-start, flex-start);
+          @include mixins.space(0.5rem, 1rem, 1rem, 0);
+          cursor: pointer;
+          border-radius: 10px;
+          gap: 1rem;
+
+          &__img {
+            height: 40px;
+          }
+
+          &__text {
+            p {
+              @include mixins.text-style(
+                0.85rem,
+                500,
+                variables.$DarkGrayishBlue
+              );
+              cursor: pointer;
+
+              i {
+                color: variables.$Red;
+              }
+
+              .container__notificatrions__item__text__bold {
+                @include mixins.text-style(1, 800, variables.$DarkGrayishBlue);
+                &:hover {
+                  color: variables.$Blue;
+                }
+              }
+
+              .container__notifications__item__text__club {
+                @include mixins.text-style(1, 800, variables.$Blue);
+              }
+            }
+
+            &__name {
+              @include mixins.text-style(1, 800, variables.$VeryDarkBlue);
+              &:hover {
+                color: variables.$Blue;
+              }
+            }
+
+            &__date {
+              opacity: 0.75;
+            }
+
+            &__massage {
+              @include mixins.space(0.85rem, 0.85rem, 0.5rem, 0);
+              @include mixins.text-style(
+                0.8rem,
+                500,
+                variables.$DarkGrayishBlue
+              );
+              line-height: 1.5;
+              border: 1px solid variables.$LightGrayishBlue2;
+              border-radius: 5px;
+
+              &:hover {
+                background-color: variables.$LightGrayishBlue1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    @include mixins.text-style(0.85rem, 500, variables.$DarkGrayishBlue);
+    text-align: center;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

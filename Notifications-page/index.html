@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <article class="container">
+        <section class="container__title">
+          <h1>Notifications <span id="notif-count">3</span></h1>
+          <p id="seenAll">Mark all as read</p>
+        </section>
+
+        <section class="container__notifications">
+          <div class="container__notifications__item">
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="profile-img"
+              class="container__notifications__item__img"
+            />
+
+            <div class="container__notifications__item__text">
+              <p>
+                <span class="container__notifications__item__text__name"
+                  >Mark Webber</span
+                >
+                reacted to your recent post
+                <span class="container__notificatrions__item__text__bold"
+                  >My first tournament today!</span
+                >
+
+                <i class="bx bxs-circle point__red"></i>
+              </p>
+
+              <p class="container__notifications__item__text__date">1m ago</p>
+            </div>
+          </div>
+
+          <div class="container__notifications__item">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="profile-img"
+              class="container__notifications__item__img"
+            />
+
+            <div class="container__notifications__item__text">
+              <p>
+                <span class="container__notifications__item__text__name"
+                  >Angela Gray</span
+                >
+                followed you
+                <i class="bx bxs-circle point__red"></i>
+              </p>
+
+              <p class="container__notifications__item__text__date">5m ago</p>
+            </div>
+          </div>
+
+          <div class="container__notifications__item">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="profile-img"
+              class="container__notifications__item__img"
+            />
+
+            <div class="container__notifications__item__text">
+              <p>
+                <span class="container__notifications__item__text__name"
+                  >Jacob Thompson</span
+                >
+                has joined your group
+                <span class="container__notifications__item__text__club"
+                  >Chess Club</span
+                >
+                <i class="bx bxs-circle point__red"></i>
+              </p>
+
+              <p class="container__notifications__item__text__date">
+                1 day ago
+              </p>
+            </div>
+          </div>
+
+          <div class="container__notifications__item">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="profile-img"
+              class="container__notifications__item__img"
+            />
+
+            <div class="container__notifications__item__text">
+              <p>
+                <span class="container__notifications__item__text__name"
+                  >Rizky Hasanuddin</span
+                >
+                sent you a private message
+                <i class="bx bxs-circle point__red"></i>
+              </p>
+
+              <p class="container__notifications__item__text__date">
+                5 days ago
+              </p>
+
+              <div class="container__notifications__item__text__massage">
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </div>
+            </div>
+          </div>
+
+          <div class="container__notifications__item">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="profile-img"
+              class="container__notifications__item__img"
+            />
+
+            <div class="container__notifications__item__text">
+              <p>
+                <span class="container__notifications__item__text__name"
+                  >Kimberly Smith</span
+                >
+                commented on your picture
+                <i class="bx bxs-circle point__red"></i>
+              </p>
+
+              <p class="container__notifications__item__text__date">
+                1 week ago
+              </p>
+            </div>
+          </div>
+
+          <div class="container__notifications__item">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="profile-img"
+              class="container__notifications__item__img"
+            />
+
+            <div class="container__notifications__item__text">
+              <p>
+                <span class="container__notifications__item__text__name"
+                  >Nathan Peterson</span
+                >
+                reacted to your recent post
+                <span class="container__notificatrions__item__text__bold"
+                  >5 end-game strategies to increase your win rate</span
+                >
+                <i class="bx bxs-circle point__red"></i>
+              </p>
+
+              <p class="container__notifications__item__text__date">
+                2 weeks ago
+              </p>
+            </div>
+          </div>
+
+          <div class="container__notifications__item">
+            <img
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="profile-img"
+              class="container__notifications__item__img"
+            />
+
+            <div class="container__notifications__item__text">
+              <p>
+                <span class="container__notifications__item__text__name"
+                  >Anna Kim</span
+                >
+                left the group
+                <span class="container__notifications__item__text__club"
+                  >Chess Club</span
+                >
+                <i class="bx bxs-circle point__red"></i>
+              </p>
+
+              <p class="container__notifications__item__text__date">
+                2 weeks ago
+              </p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/profile/alanmartinc" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://github.com/alanmartinc"
+        target="_blank"
+        >Alan Cabot</a
+      >.
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

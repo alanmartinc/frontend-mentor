@@ -1,0 +1,33 @@
+@use "../SASS/variables";
+
+@mixin text-style($size, $weight, $color) {
+  font: {
+    size: $size;
+    weight: $weight;
+    family: variables.$plusJakartaSans;
+  }
+  color: $color;
+}
+
+@mixin space($paddingY, $paddingX, $marginY, $marginX) {
+  padding: {
+    top: $paddingY;
+    bottom: $paddingY;
+    left: $paddingX;
+    right: $paddingX;
+  }
+
+  margin: {
+    top: $marginY;
+    bottom: $marginY;
+    left: $marginX;
+    right: $marginX;
+  }
+}
+
+@mixin displayFlex($direction, $justContent, $alignItems) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justContent;
+  align-items: $alignItems;
+} ;

@@ -1,0 +1,198 @@
+/*-------------------colours---------------------*/
+/*-------Primary---------*/
+/*------ Neutral ---------*/
+/*-----------fonts------------*/
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+body {
+  background-color: hsl(210deg, 60%, 98%);
+}
+body main {
+  margin-bottom: 1.5rem;
+}
+body main .container {
+  padding-top: 1.55rem;
+  padding-bottom: 1.55rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 777px) {
+  body main .container {
+    width: 75%;
+    margin: 5% auto;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  body main .container {
+    padding-top: 1.55rem;
+    padding-bottom: 1.55rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;
+    margin: 5% auto;
+  }
+}
+body main .container__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.55rem;
+}
+body main .container__title h1 {
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(224deg, 21%, 14%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+body main .container__title h1 span {
+  display: block;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(219deg, 85%, 26%);
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+body main .container__title p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219deg, 12%, 42%);
+  cursor: pointer;
+}
+body main .container__title p:hover {
+  color: hsl(219deg, 85%, 26%);
+  font-weight: 800;
+}
+body main .container__notifications {
+  border-radius: 1rem;
+}
+body main .container__notifications__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  gap: 1rem;
+}
+body main .container__notifications__item__img {
+  height: 40px;
+}
+body main .container__notifications__item__text p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219deg, 12%, 42%);
+  cursor: pointer;
+}
+body main .container__notifications__item__text p i {
+  color: hsl(1deg, 90%, 64%);
+}
+body
+  main
+  .container__notifications__item__text
+  p
+  .container__notificatrions__item__text__bold {
+  font-size: 1;
+  font-weight: 800;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219deg, 12%, 42%);
+}
+body
+  main
+  .container__notifications__item__text
+  p
+  .container__notificatrions__item__text__bold:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+body
+  main
+  .container__notifications__item__text
+  p
+  .container__notifications__item__text__club {
+  font-size: 1;
+  font-weight: 800;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219deg, 85%, 26%);
+}
+body main .container__notifications__item__text__name {
+  font-size: 1;
+  font-weight: 800;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(224deg, 21%, 14%);
+}
+body main .container__notifications__item__text__name:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+body main .container__notifications__item__text__date {
+  opacity: 0.75;
+}
+body main .container__notifications__item__text__massage {
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: 0.85rem;
+  padding-right: 0.85rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219deg, 12%, 42%);
+  line-height: 1.5;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 5px;
+}
+body main .container__notifications__item__text__massage:hover {
+  background-color: hsl(211deg, 68%, 94%);
+}
+body footer {
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219deg, 12%, 42%);
+  text-align: center;
+}
+body footer a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=styles.css.map */

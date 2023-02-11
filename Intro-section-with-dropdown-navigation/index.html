@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+<body>  
+    <header>
+      <div class="overlay"></div>
+      <img src="images/logo.svg" alt="logo">
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a href="#" class="features">Features</a>
+            <svg width="10" height="6">
+              <path class="icon-arrow-down" stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+              <path class="icon-arrow-up" stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" />
+            </svg>
+            <ul class="dropdown-menu">
+              <li>
+                <img src="images/icon-todo.svg" alt="notebook icon">
+                Todo List
+              </li>
+              <li>
+                <img src="images/icon-calendar.svg" alt="calendar icon">
+                Calendar
+              </li>
+              <li>
+                <img src="images/icon-reminders.svg" alt="bell icon">
+                Reminders
+              </li>
+              <li>
+                <img src="images/icon-planning.svg" alt="clock icon">
+                Planing
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="company">Company</a>
+            <svg width="10" height="6">
+              <path class="icon-arrow-down-second" stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4" />
+              <path class="icon-arrow-up-second" stroke="#686868" stroke-width="1.5" fill="none" d="m1 5 4-4 4 4" />
+            </svg>
+            <ul class="dropdown-menu second">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+        <a class="login" href="#">Login</a>
+        <button class="reg-btn">Register</button>
+      </nav>
+      <button class="menu-btn" aria-label="open menu">
+        <img class="open-menu" src="images/icon-menu.svg" alt="icon menu">
+        <img class="close-menu" src="images/icon-close-menu.svg" alt="icon close menu">
+      </button>
+    </header>
+    <main>
+
+      <div class="text-container">
+        <h1>Make<br>remote work</h1>
+
+        <p>Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+
+        <button>Learn more</button>
+
+        <div class="clients-container">
+          <img src="images/client-databiz.svg" alt="client databiz">
+          <img src="images/client-audiophile.svg" alt="client audiophile">
+          <img src="images/client-meet.svg" alt="client meet">
+          <img src="images/client-maker.svg" alt="client maker">
+        </div>
+      </div>
+
+      <div class="img-container">
+        <img class="desk-img" src="images/image-hero-desktop.png" alt="man with laptop in geometric figures">
+        <img class="mobile-img" src="images/image-hero-mobile.png" alt="man with laptop in geometric figures">
+      </div>
+
+    </main>
+  <script src="main.js"></script>
+</body>
+
+</html>

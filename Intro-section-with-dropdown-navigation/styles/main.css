@@ -1,0 +1,391 @@
+@import "https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Epilogue", serif;
+  font-size: 18px;
+  margin: 0.5rem 4rem 4rem;
+  background-color: #fafafa;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: smoth 0.5s;
+  display: none;
+}
+.show {
+  display: block;
+}
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+header nav img {
+  margin-top: 0.4rem;
+  width: 100px;
+}
+header nav ul {
+  display: flex;
+  gap: 3rem;
+  margin: 0 4rem;
+  flex: 1;
+}
+header nav ul li {
+  position: relative;
+  font-size: 0.98rem;
+  list-style: none;
+}
+header nav ul li a {
+  color: dimgray;
+  text-decoration: none;
+}
+header nav ul li svg {
+  margin-bottom: 0.1rem;
+  margin-left: 0.2rem;
+}
+header nav ul li .icon-arrow-up {
+  display: none;
+  transition: all 0.4s;
+}
+header nav ul li .icon-arrow-up-second {
+  display: none;
+}
+header nav ul li .occult {
+  display: none;
+}
+header nav ul li .show {
+  display: block;
+}
+header nav ul li .dropdown-menu {
+  box-sizing: border-box;
+  margin-top: 1rem;
+  position: absolute;
+  width: 168px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  background-color: #fff;
+  left: -146px;
+  padding: 1.3rem 1.5rem;
+  border-radius: 0.6rem;
+  color: dimgray;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+  opacity: 0;
+}
+header nav ul li .dropdown-menu li:hover {
+  cursor: pointer;
+  color: #141414;
+}
+header nav ul li .dropdown-menu img {
+  position: relative;
+  top: 0.1rem;
+  margin-right: 0.6rem;
+  width: 17px;
+  height: 17px;
+}
+header nav ul li .second {
+  padding: 1.3rem;
+  width: 120px;
+  justify-content: space-around;
+  gap: 1.3rem;
+  left: -64px;
+}
+header nav ul li .dropdown-active {
+  opacity: 1;
+}
+header nav a:hover {
+  color: #141414;
+}
+header nav .login {
+  margin-right: 2rem;
+  text-decoration: none;
+  font-size: 0.98rem;
+  color: dimgray;
+}
+header nav button {
+  color: dimgray;
+  font-size: 0.98rem;
+  border: 2px solid dimgray;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.7rem;
+}
+header nav .reg-btn:hover {
+  cursor: pointer;
+  color: #141414;
+  border: 2px solid #141414;
+}
+header .menu-btn {
+  display: none;
+  border: none;
+  background: none;
+  z-index: 1;
+}
+header .menu-btn img {
+  width: 40px;
+}
+header .menu-btn img:nth-child(2) {
+  height: 32px;
+}
+header .menu-btn .close-menu {
+  display: none;
+}
+header .menu-btn .occult {
+  display: none;
+}
+header .menu-btn .show {
+  display: block;
+}
+main {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+}
+.text-container {
+  margin-top: 4rem;
+  width: 50%;
+}
+.text-container h1 {
+  font-size: 5rem;
+}
+.text-container p {
+  width: 62%;
+  color: dimgray;
+  margin-top: 3rem;
+  font-size: 0.99rem;
+  line-height: 1.7rem;
+}
+.text-container button {
+  box-sizing: border-box;
+  margin-top: 3.2rem;
+  border: none;
+  background-color: #141414;
+  color: #fafafa;
+  padding: 0.9rem 1.4rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 0.7rem;
+  border: 2px solid #141414;
+}
+.text-container button:hover {
+  cursor: pointer;
+  background: none;
+  border: 2px solid #141414;
+  color: #141414;
+}
+.text-container .clients-container {
+  width: 90%;
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.img-container {
+  width: 40%;
+}
+.img-container .mobile-img {
+  display: none;
+}
+.img-container img {
+  width: 100%;
+  height: 640px;
+}
+@media (max-width: 1200px) {
+  body {
+    margin: 0.5rem 3rem 4rem;
+  }
+  main {
+    align-items: center;
+  }
+  .text-container {
+    width: 46%;
+  }
+  .text-container h1 {
+    font-size: 4rem;
+  }
+  .text-container p {
+    width: 80%;
+  }
+  .text-container .clients-container {
+    margin-top: 6rem;
+  }
+  .img-container {
+    width: 50%;
+  }
+}
+@media (max-width: 950px) {
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav img {
+    margin-top: 0.4rem;
+    width: 100px;
+  }
+  header nav ul {
+    display: flex;
+    gap: 1rem;
+    margin: 0 4rem;
+    flex: 1;
+  }
+  header nav ul li {
+    font-size: 0.89rem;
+  }
+  header nav ul li .dropdown-menu {
+    width: 146px;
+    left: -130px;
+    padding: 1.2rem;
+  }
+  header nav ul li .second {
+    padding: 1.2rem;
+    width: 108px;
+    left: -64px;
+  }
+  header nav .login {
+    margin-right: 1rem;
+  }
+  main {
+    flex-direction: column-reverse;
+  }
+  .text-container {
+    margin-top: 2.6rem;
+    width: 100%;
+    text-align: center;
+  }
+  .text-container p {
+    width: 100%;
+  }
+  .text-container .clients-container {
+    width: 100%;
+  }
+  .img-container {
+    width: 100%;
+  }
+  .img-container .desk-img {
+    display: none;
+  }
+  .img-container .mobile-img {
+    height: auto;
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  header {
+    justify-content: space-between;
+  }
+  header nav {
+    box-sizing: border-box;
+    padding: 4rem 2rem;
+    flex-direction: column;
+    position: fixed;
+    background-color: #fafafa;
+    width: 68%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    align-items: start;
+    right: -100%;
+    transition: all 0.5s;
+  }
+  header nav ul {
+    margin: 0;
+    align-items: start;
+    flex-direction: column;
+  }
+  header nav ul li {
+    font-size: 1rem;
+  }
+  header nav ul li svg {
+    margin-left: 0.7rem;
+  }
+  header nav ul li .dropdown-menu {
+    display: none;
+  }
+  header nav ul li .dropdown-active {
+    opacity: 1;
+    position: static;
+    display: block;
+    line-height: 2rem;
+    margin: 0;
+    width: 200px;
+    background-color: #fafafa;
+    box-shadow: none;
+    animation: smoth 0.5s;
+  }
+  @keyframes smoth {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  header nav .login {
+    padding: 1rem;
+    margin: 0;
+    align-self: center;
+  }
+  header nav button {
+    align-self: center;
+    margin-bottom: 10rem;
+    padding: 0.6rem 4rem;
+  }
+  header .menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-active {
+    right: 0;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    margin: 0.5rem 1rem 3rem;
+  }
+  header .menu-btn img {
+    width: 34px;
+  }
+  header .menu-btn img:nth-child(2) {
+    width: 30px;
+    height: 24px;
+  }
+  .text-container {
+    margin-top: 1.4rem;
+  }
+  .text-container h1 {
+    font-size: 3rem;
+  }
+  .text-container p {
+    margin-top: 1.2rem;
+  }
+  .text-container button {
+    margin-top: 2rem;
+  }
+  .text-container .clients-container {
+    flex-wrap: wrap;
+    margin-top: 3.4rem;
+  }
+}

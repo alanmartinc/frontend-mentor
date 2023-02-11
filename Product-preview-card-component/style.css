@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: hsl(228, 12%, 48%);
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.container {
+  width: 45%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10rem auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 9px;
+  overflow: hidden;
+}
+.img-box {
+  background-image: url("images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-box {
+  padding: 3.2rem;
+  padding-right: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.subheading {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.main-heading {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 3.6rem;
+  line-height: 1;
+  font-weight: 700;
+}
+.description {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.prices-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+.new-price {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 3.6rem;
+}
+.old-price {
+  font-size: 1.4rem;
+  text-decoration: line-through;
+}
+.buy-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.6rem;
+  border: none;
+  cursor: pointer;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 9px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.buy-btn:hover,
+.buy-btn:active {
+  background-color: hsl(158, 33%, 25%);
+}
+.cart-icon {
+  width: 1.8rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    grid-template-columns: 1fr;
+    margin: 2rem auto;
+  }
+  .img-box {
+    grid-row: 1;
+    height: 25rem;
+    background-position: center;
+  }
+  .text-box {
+    padding: 2.4rem;
+  }
+  .main-heading {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+}

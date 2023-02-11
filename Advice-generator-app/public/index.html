@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Advice generator app</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-mydBlue grid place-content-center min-h-screen max-w-full p-4 font-manrope"
+  >
+    <main
+      class="bg-mydgBlue text-center p-8 rounded-lg relative mb-16 md:w-1/2 m-auto rounded-xl"
+    >
+      <p
+        class="uppercase text-sm tracking-myWide font-light text-neonGreen py-4"
+      >
+        Advice #<span id="ad-num"></span>
+      </p>
+
+      <h1 class="text-lightCyan text-2xl py-4">"<span id="advice"></span>"</h1>
+      <picture>
+        <source
+          class="py-6 m-auto"
+          media="(min-width: 768px)"
+          srcset="images/pattern-divider-desktop.svg"
+        />
+        <img
+          class="py-6 m-auto"
+          src="images/pattern-divider-mobile.svg"
+          alt="divider"
+        />
+      </picture>
+      <div class="w-full absolute left-0">
+        <div
+          id="dice"
+          class="m-auto bg-neonGreen hover:bg-hovnGreen hover:shadow-neonShadow w-fit p-6 rounded-full top-4"
+        >
+          <svg
+            class="m-auto"
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+              fill="#202733"
+            />
+          </svg>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center text-lightCyan">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/profile/alanmartinc"
+        target="_blank"
+        class="text-neonGreen"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/alanmartinc" class="text-neonGreen">Alan Cabot</a>.
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
